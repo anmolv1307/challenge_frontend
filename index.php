@@ -32,12 +32,14 @@ $model = new Records();
 
   <title>Security Screen</title>
 
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
   <link rel="stylesheet" href="css/styles.css?v=1.0">
 
 </head>
 
 <body>
-  <script src="js/scripts.js"></script>
+  
   	<?= $model->legal_name ?>  <br>
 
 	<?php foreach($controlledGoods as $good): ?>
@@ -45,6 +47,11 @@ $model = new Records();
 	<?= $good['Description'] ?> <?=$good['Group']?> <?=$good['Item']?> <br>
 
 	<?php endforeach;?>
+	
+
+	<script src="js/jquery-3.5.1.slim.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/scripts.js"></script>
 </body>
 </html>
 
